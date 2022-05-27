@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ 
+div.gallery {
+  margin: 5px;
+  border: 1px solid rgb(250, 249, 249);
+  float: left;
+  width: 325px;
+}
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+div.gallery:hover {
+  border: 1px solid #777;
+  cursor: pointer;
+  transition: 0.3s;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+
+}
+.modal {
+  display: none; 
+  text-align: center;
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 50px; 
+  padding-bottom:100px;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9); 
+}
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  height:60%;
+  max-width: 400px;
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+div.top-left {
+  position: absolute;
+  top: 82px;
+  font-weight: lighter;
+  left: 14px;
+}
+div.top-left01 {
+  position: absolute;
+  top: 261px;
+  font-weight: lighter;
+  left: 14px;
+}
+div.top-left02 {
+  position: absolute;
+  top: 261px;
+  font-weight: lighter;
+  left: 352px;
+}
+div.top-left03 {
+  position: absolute;
+  top: 261px;
+  font-weight: lighter;
+  left: 688px;
+}
+div.top-left04 {
+  position: absolute;
+  top: 261px;
+  font-weight: lighter;
+  left: 1024px;
+}
+div.top-left1 {
+  position: absolute;
+  top: 82px;
+  font-weight: lighter;
+  left: 352px;
+}
+div.top-left2 {
+  position: absolute;
+  top: 82px;
+  font-weight: lighter;
+  left: 688px;
+}
+div.top-left3 {
+  position: absolute;
+  top: 82px;
+  font-weight: lighter;
+  left: 1024px;
+}
+</style>
+  <h2>Projects</h2>
+  <hr>
+</head>
+<body>
+
+<div class="gallery">
+
+    <img id="gallery.myImg" src="summer_house.jpg" width="1200" height="600">
+    <div class="top-left">
+        <table width="100%" bgcolor="black">
+            
+            <tr>
+                <td><strong><font color="white"  font face="innertext"></strong>&nbsp;&nbsp;Summer House&nbsp;&nbsp;</strong></td>
+            </tr>
+        </table>
+    </div>
+
+  </a>
+</div>
+
+<div class="gallery">
+    <img src="brick_house.jpg" width="1200" height="600">
+
+    <div class="top-left1">
+        <table width="100%" bgcolor="black">
+            <tr>
+                <td><strong><font color="white"  font face="innertext"></strong>&nbsp;&nbsp;Brick House&nbsp;&nbsp;</strong></td>
+            </tr>
+        </table>
+    </div>
+  </a>
+</div>
+
+<div class="gallery">
+
+    <img src="renovated_house.jpg"  width="1200" height="600">
+    <div class="top-left2">
+        <table width="100%" bgcolor="black">
+            <tr>
+                <td><strong><font color="white"  font face="innertext"></strong>&nbsp;&nbsp;Renovated House&nbsp;&nbsp;</strong></td>
+            </tr>
+        </table>
+    </div>
+  </a>
+</div>
+
+<div class="gallery">
+    <img src="barn_house.jpg"  width="1200" height="600">
+    <div class="top-left3">
+        <table width="100%" bgcolor="black">
+            <tr>
+                <td><strong><font color="white"  font face="innertext"></strong>&nbsp;&nbsp;Barn House&nbsp;&nbsp;</strong></td>
+            </tr>
+        </table>
+    </div>
+  </a>
+</div>
+<div class="gallery">
+
+  <img id="gallery.myImg" src="summer_house.jpg" width="1200" height="600">
+  <div class="top-left01">
+      <table width="100%" bgcolor="black">
+          
+          <tr>
+              <td><strong><font color="white"  font face="innertext"></strong>&nbsp;&nbsp;Summer House&nbsp;&nbsp;</strong></td>
+          </tr>
+      </table>
+  </div>
+
+</a>
+</div>
+  <div class="gallery">
+      <img src="brick_house.jpg" width="1200" height="600">
+      <div class="top-left02">
+          <table width="100%" bgcolor="black">
+              <tr>
+                  <td><strong><font color="white"  font face="innertext"></strong>&nbsp;&nbsp;Brick House&nbsp;&nbsp;</strong></td>
+              </tr>
+          </table>
+      </div>
+    </a>
+  </div>
+  <div class="gallery">
+      <img src="renovated_house.jpg" width="1200" height="600">
+      <div class="top-left03">
+          <table width="100%" bgcolor="black">
+              <tr>
+                  <td><strong><font color="white"  font face="innertext"></strong>&nbsp;&nbsp;Renovated House&nbsp;&nbsp;</strong></td>
+              </tr>
+          </table>
+      </div>
+    </a>
+  </div>
+  <div class="gallery">
+      <img src="barn_house.jpg" width="1200" height="600">
+      <div class="top-left04">
+          <table width="100%" bgcolor="black">
+              <tr>
+                  <td><strong><font color="white"  font face="innertext"></strong>&nbsp;&nbsp;Barn House&nbsp;&nbsp;</strong></td>
+              </tr>
+          </table>
+      </div>
+    </a>
+  </div>
+  <div class="modal">
+    <span class="close">&times;</span>
+    <img class="modalImage" id="img01" />
+    </div>
+    <script>
+    var modalEle = document.querySelector(".modal");
+    var modalImage = document.querySelector(".modalImage");
+    Array.from(document.querySelectorAll(".gallery")).forEach(item => {
+    item.addEventListener("click", event => {
+    modalEle.style.display = "block";
+    modalImage.src = event.target.src;
+    });
+    });
+    document.querySelector(".close").addEventListener("click", () => {
+    modalEle.style.display = "none";
+    });
+    </script>
+
+</body>
+
+</html>
+
+
